@@ -1,9 +1,9 @@
 let A = [2, 3, 5, 7, 8]
 
-let B = A.map((element, index) => {
-  return {
-    numero: element
-  }
+let i = 0
+
+A.forEach((element, index) => {
+  i++
 })
 
-document.body.innerText = JSON.stringify(B) // console.log
+document.body.innerText = A.length // console.log
