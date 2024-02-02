@@ -1,9 +1,9 @@
-let A = [2, 3, 5, 7, 8]
+let A = [2, 3, 5, 7, 8, 20]
 
 let C = ["Olá", "Tudo bem", "Como vai", "Tudo certo", "Beleza"]
 
-let B = C.filter((element) => {
-  return element.length < 6
+let teste = A.some((element) => {
+  return element > 10
 })
 
-document.body.innerText = B // console.log
+document.body.innerText = teste // console.log
