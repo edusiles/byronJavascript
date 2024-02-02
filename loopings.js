@@ -11,3 +11,4 @@ while(i <= 100) {
 for(let i = 50; i <= 200; i = i + 2) {
    console.log(i)
 }
+
