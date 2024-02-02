@@ -1,7 +1,3 @@
-let numero = 6
+import { soma, g } from './lib/math.js'
 
-let nome = "José"
-
-let frase = `O nome do meu irmão é ${nome} e ele tem ${numero} anos`
-
-document.body.innerText = frase
+document.body.innerText = soma(g, 4)
