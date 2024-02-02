@@ -1,7 +1,7 @@
-let A = [2, 3, 5, 7, 8, 20]
+let numero = 6
 
-let B = A.reduce((anterior, atual) => {
-  return anterior + atual
-}, 1)
- 
-document.body.innerText = B // console.log
+let nome = "José"
+
+let frase = `O nome do meu irmão é ${nome} e ele tem ${numero} anos`
+
+document.body.innerText = frase
