@@ -1,30 +1,35 @@
-// Promises
+import axios from 'axios'
 
-// fetch('https://api.github.com/users/edusiles')
+// axios.post('https://api.github.com/login', {
+//    email: "teste@email.com",
+//    password: "asdasdas"
+// }, {
+//    headers: {
+
+//    }
+// })
 //    .then(response => {
-//       return response.json()
-//    })
-//    .then(body => {
-//       console.log(body)
+//       console.log(response)
 //    })
 //    .catch(err => {
 //       console.log(err)
 //    })
 //    .finally(() => {
-//       console.log("Terminado!")
+//       console.log("Terminou!")
 //    })
 
-async function buscaPorDados() {
+async function getUser() {
    try {
-      let response = await fetch('https://api.github.com/users/edusiles')
-      let body = await response.json()
-   
-      console.log(body)
-   } catch(err) {
-      console.log(err)
-   } finally {
-      console.log("Terminou")
+      const response = await axios.get('https://api.github.com/users/edusiles', {
+         headers: {
+            'Content-type': 'application/json',
+            'Accept': 'application/json',
+         }
+      });
+      console.log(response);
+   } catch(error) {
+      console.error(error);
    }
 }
 
-buscaPorDados()
+getUser();
